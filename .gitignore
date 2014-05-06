@@ -1,0 +1,9 @@
+node_modules
+/config.js
+.idea
+.nodemonignore
+daemon
+/beacon-builder.log
+/app.log
+/todo.txt
+download

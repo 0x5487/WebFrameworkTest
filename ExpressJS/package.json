@@ -1,0 +1,16 @@
+{
+  "name": "ExpressApp1",
+  "version": "0.0.0",
+  "description": "ExpressApp1",
+  "main": "app.js",
+  "author": {
+    "name": "jalee",
+    "email": ""
+  },
+  "dependencies": {
+    "express": "4.x",
+    "stylus": "*",
+	"dustjs-linkedin": "2.x",
+	"consolidate": ""
+  }
+}
