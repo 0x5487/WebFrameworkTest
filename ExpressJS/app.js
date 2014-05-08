@@ -7,10 +7,12 @@
 var express = require('express');
 var dust = require('dustjs-linkedin');
 var cons = require('consolidate');
+var path = require('path');
 
 var app = express();
 
 // all environments
+app.set('env', "production");
 app.set('port', process.env.PORT || 3000);
 app.engine("html", cons.dust);
 app.set('views', __dirname + '/views');
@@ -24,7 +26,7 @@ app.set('view options', {layout: false});
 //app.use(express.methodOverride());
 //app.use(app.router);
 //app.use(require('stylus').middleware(path.join(__dirname, 'public')));
-//app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // development only
 //if ('development' == app.get('env')) {
